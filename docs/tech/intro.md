@@ -1,3 +1,19 @@
+---
+title: Introduction
+keywords:
+  [
+    "learning",
+    "notes",
+    "tech",
+    "cloud",
+    "engineering",
+    "architecture",
+    "devops",
+    "coding",
+    "programming",
+  ]
+---
+
 # tech-notes
 
 This documentation aims to comprise my learning notes on various tech subjects.
@@ -28,9 +44,9 @@ This is highly inspired by the following projects:
 
 [![](https://img.shields.io/badge/License-CC%20BY--SA-lightgrey?style=flat-square&logo=creativecommons&&logoColor=white)](https://creativecommons.org/licenses/by-sa/4.0/) [![](https://img.shields.io/badge/License-MIT-red?style=flat-square)](https://mit-license.org)
 
-The documentation content is made available under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE_DOCS).
+The documentation content is made available under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
-All the underlying source code used to format and display that content and sample code within this documentation is licensed under the [MIT License](LICENSE_CODE).
+All the underlying source code used to format and display that content and sample code within this documentation is licensed under the [MIT License](https://mit-license.org).
 
 ## Profiles
 
