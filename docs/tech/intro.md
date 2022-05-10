@@ -12,6 +12,7 @@ keywords:
     "coding",
     "programming",
   ]
+slug: /
 ---
 
 # tech-notes

@@ -31,8 +31,8 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Tech-Notes",
-    link: "https://difranca.github.io/tech-notes/intro",
-    Svg: "img/anim.gif", //require("@site/static/img/cloud/aws/logo.png").default,
+    link: "https://difranca.github.io/tech-notes/",
+    Svg: "img/tech-notes.gif", //require("@site/static/img/cloud/aws/logo.png").default,
     description: (
       <>
         Tech-Notes comprises my learning notes on various tech subjects.
