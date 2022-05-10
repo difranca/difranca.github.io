@@ -56,8 +56,8 @@ const config = {
       "@docusaurus/plugin-client-redirects",
       {
         createRedirects(existingPath) {
-          if (existingPath.includes("/learning")) {
-            return [existingPath.replace("/learning", "/tech-notes")];
+          if (existingPath.includes("/learning-notes")) {
+            return [existingPath.replace("/learning-notes", "/tech-notes")];
           }
           return undefined;
         },
