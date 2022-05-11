@@ -46,6 +46,9 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        gtag: {
+          trackingID: "G-6WT9XWQMQ5",
+        },
       }),
     ],
   ],
@@ -55,14 +58,21 @@ const config = {
     [
       "@docusaurus/plugin-client-redirects",
       {
-        createRedirects(existingPath) {
-          if (existingPath.includes("/learning-notes")) {
-            return [existingPath.replace("/learning-notes", "/tech-notes")];
+        createRedirects: (path) => {
+          if (path.includes("/learning-notes")) {
+            return [path.replace("/learning-notes", "/tech-notes")];
           }
-          return undefined;
         },
       },
     ],
+    // [
+    //   "@docusaurus/preset-classic",
+    //   {
+    //     gtag: {
+    //       trackingID: "G-6WT9XWQMQ5",
+    //     },
+    //   },
+    // ],
   ],
 
   themeConfig:
