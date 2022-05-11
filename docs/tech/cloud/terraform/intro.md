@@ -9,7 +9,7 @@ slug: "/cloud/terraform"
 
 <div style={{textAlign: 'center'}}>
 
-<img width="200" src="/img/cloud/terraform/logo.png"/>
+<img width="200" src="/img/cloud/terraform.png"/>
 
 _Terraform codifies cloud APIs into declarative configuration files._
 

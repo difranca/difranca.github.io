@@ -1,10 +1,12 @@
-# tech-notes
+# difranca.github.io
+
+My profile page and learning notes 📚.
+
+## tech-notes
 
 This documentation aims to comprise my learning notes on various tech subjects.
 
 Each topic may contain personal notes or a summary of key concepts that are available in other documentation.
-
-If you want to delve deeper into the subjects, access the links available in the **More Information** panels.
 
 ## How It Works
 
@@ -31,8 +33,3 @@ This is highly inspired by the following projects:
 The documentation content is made available under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE_DOCS).
 
 All the underlying source code used to format and display that content and sample code within this documentation is licensed under the [MIT License](LICENSE_CODE).
-
-## Profiles
-
-- GitHub: https://github.com/difranca
-- LinkedIn: https://www.linkedin.com/in/difranca

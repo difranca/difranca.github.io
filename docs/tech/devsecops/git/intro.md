@@ -1,23 +1,23 @@
 ---
-keywords: ["cloud", "computing", "iac", "infrastructure"]
-slug: "/cloud/aws"
+keywords: ["git", "scm", "devops", "gitops"]
+slug: "/devsecops/git"
 ---
 
-# AWS
+# Git
 
 <br/>
 
 <div style={{textAlign: 'center'}}>
 
-<img width="200" src="/img/cloud/aws.png"/>
+<img width="200" src="/img/devsecops/git.png"/>
 
-_Amazon Web Services provides on-demand cloud computing services._
+_Git is a free and open source distributed version control system._
 
 </div>
 
 :::note More Information
 
-- https://aws.amazon.com
+- https://git-scm.com
 
 :::
 

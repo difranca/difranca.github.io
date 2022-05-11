@@ -80,6 +80,12 @@ const sidebars = {
           link: { type: "doc", id: "devsecops/argocd/intro" },
           items: ["devsecops/argocd/architecture"],
         },
+        {
+          type: "category",
+          label: "Git",
+          link: { type: "doc", id: "devsecops/git/intro" },
+          items: ["devsecops/git/pre-commit"],
+        },
       ],
     },
   ],
