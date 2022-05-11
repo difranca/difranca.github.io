@@ -8,7 +8,7 @@ keywords: ["aws", "amazon", "ec2", "compute"]
 
 <div style={{textAlign: 'center'}}>
 
-<img width="200" src="/img/cloud/aws/amazon-ec2.png"/>
+<img width="200" src="/img/cloud/ec2.png"/>
 
 _EC2 provides a scalable compute infrastructure that can be sized to match the workload’s needs._
 

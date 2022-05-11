@@ -65,14 +65,6 @@ const config = {
         },
       },
     ],
-    // [
-    //   "@docusaurus/preset-classic",
-    //   {
-    //     gtag: {
-    //       trackingID: "G-6WT9XWQMQ5",
-    //     },
-    //   },
-    // ],
   ],
 
   themeConfig:
@@ -93,7 +85,7 @@ const config = {
         title: "difranca",
         logo: {
           alt: "My Site Logo",
-          src: "img/icon.png",
+          src: "img/logo.png",
         },
         items: [
           {
