@@ -9,7 +9,7 @@ slug: "/cloud/aws"
 
 <div style={{textAlign: 'center'}}>
 
-<img width="200" src="/img/cloud/aws.png"/>
+<img width="200" height="200" alt="logo" src="/img/cloud/aws.png"/>
 
 _Amazon Web Services provides on-demand cloud computing services._
 

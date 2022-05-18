@@ -146,7 +146,7 @@ const config = {
             title: "License",
             items: [
               {
-                html: `<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="License" style="height: 40px !important;" ></a>`,
+                html: `<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="CC BY-SA License" height="40px" width="114px" ></a>`,
               },
             ],
           },
