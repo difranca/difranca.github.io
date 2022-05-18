@@ -9,7 +9,7 @@ slug: "/devsecops/git"
 
 <div style={{textAlign: 'center'}}>
 
-<img width="200" src="/img/devsecops/git.png"/>
+<img width="200" height="200" alt="logo" src="/img/devsecops/git.png"/>
 
 _Git is a free and open source distributed version control system._
 

@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Tech-Notes",
-    link: "https://difranca.github.io/tech-notes/",
+    link: "/tech-notes/",
     img: "img/tech-notes.gif",
     description: (
       <>
@@ -49,7 +49,7 @@ function Feature({ title, link, img: img, description }: FeatureItem) {
     <div className={clsx("col col--6")}>
       <a className="text--center" href={link}>
         <div className="feature-logo">
-          <img src={img} height="100px"></img>
+          <img src={img} alt={title} height="100px" width="333px"></img>
         </div>
       </a>
       <div className="text--center padding-horiz--md">

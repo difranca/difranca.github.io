@@ -9,7 +9,7 @@ slug: "/devsecops/argocd"
 
 <div style={{textAlign: 'center'}}>
 
-<img width="200" src="/img/devsecops/argo.png"/>
+<img width="200" height="200" alt="logo" src="/img/devsecops/argo.png"/>
 
 _Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes._
 
