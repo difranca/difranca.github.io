@@ -1,5 +1,5 @@
 ---
-keywords: ["cheat", "sheet", "cheatsheet", "cheats", "devsecops", "git"]
+keywords: ["cheat", "sheet", "cheatsheet", "cheats", "DevSecOps", "git"]
 ---
 
 import Tabs from '@theme/Tabs';
@@ -130,7 +130,7 @@ Temporarily store modified files
 |**git stash**|Save modifications for later use and rollback to last the last commit|
 |**git stash list**|List saved stashes|
 |**git stash pop**|Apply stashed changes into the current branch (discard saved stash)|
-|**git stash pop**|Apply stashed changes into the current branch (keep saved stash)|
+|**git stash apply**|Apply stashed changes into the current branch (keep saved stash)|
 |**git stash drop**|Discard saved stash|
 
 <br/>
@@ -325,7 +325,7 @@ git stash list
 git stash pop
 
 # Apply stashed changes into the current branch (keep saved stash)
-git stash pop
+git stash apply
 
 # Discard saved stash
 git stash drop
