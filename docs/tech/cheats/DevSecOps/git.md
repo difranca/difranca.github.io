@@ -1,5 +1,6 @@
 ---
-keywords: ["cheat", "sheet", "cheatsheet", "cheats", "DevSecOps", "git"]
+keywords: ["cheat", "sheet", "cheatsheet", "cheats", "devsecops", "git"]
+slug: "/cheats/devsecops/git"
 ---
 
 import Tabs from '@theme/Tabs';
