@@ -1,6 +1,8 @@
 ---
-keywords: ["argo", "cd", "argocd", "gitops"]
-slug: "/devsecops/argocd"
+keywords: [argo, cd, argocd, gitops]
+slug: /devsecops/argocd
+title: Argo CD | DevSecOps | Tech-Notes
+sidebar_label: Argo CD
 ---
 
 # Argo CD

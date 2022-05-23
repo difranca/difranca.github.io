@@ -1,5 +1,7 @@
 ---
-keywords: ["git", "hook", "commit", "pre-commit", "secret", "format", "lint"]
+keywords: [git, hook, commit, pre-commit, secret, format, lint]
+title: Pre-Commit | Git | DevSecOps | Tech-Notes
+sidebar_label: Pre-Commit
 ---
 
 # Pre-Commit

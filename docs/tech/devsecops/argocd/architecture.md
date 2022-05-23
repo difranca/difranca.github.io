@@ -1,5 +1,7 @@
 ---
-keywords: ["argo", "cd", "argocd", "gitops"]
+keywords: [argo, cd, argocd, gitops]
+title: Architecture | Argo CD | DevSecOps | Tech-Notes
+sidebar_label: Architecture
 ---
 
 # Architecture

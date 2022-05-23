@@ -19,18 +19,15 @@ const sidebars = {
   // But you can create a sidebar manually
 
   tech: [
-    "intro",
+    "index",
     {
       type: "category",
       label: "☁ Cloud",
       collapsed: false,
       collapsible: false,
       link: {
-        type: "generated-index",
-        description:
-          "Topics about cloud computing providers and infrastructure as code.",
-        keywords: ["cloud", "computing", "iac", "infrastructure"],
-        slug: "cloud",
+        type: "doc",
+        id: "cloud/index",
       },
       items: [
         {
@@ -38,7 +35,7 @@ const sidebars = {
           label: "AWS",
           link: {
             type: "doc",
-            id: "cloud/aws/intro",
+            id: "cloud/aws/index",
           },
           items: ["cloud/aws/ec2"],
         },
@@ -47,7 +44,7 @@ const sidebars = {
           label: "Terraform",
           link: {
             type: "doc",
-            id: "cloud/terraform/intro",
+            id: "cloud/terraform/index",
           },
           items: ["cloud/terraform/backend"],
         },
@@ -59,31 +56,20 @@ const sidebars = {
       collapsed: false,
       collapsible: false,
       link: {
-        type: "generated-index",
-        description:
-          "Practices that combines software development, security and operations.",
-        keywords: [
-          "devsecops",
-          "devops",
-          "ci/cd",
-          "cicd",
-          "development",
-          "security",
-          "operations",
-        ],
-        slug: "devsecops",
+        type: "doc",
+        id: "devsecops/index",
       },
       items: [
         {
           type: "category",
           label: "Argo CD",
-          link: { type: "doc", id: "devsecops/argocd/intro" },
+          link: { type: "doc", id: "devsecops/argocd/index" },
           items: ["devsecops/argocd/architecture"],
         },
         {
           type: "category",
           label: "Git",
-          link: { type: "doc", id: "devsecops/git/intro" },
+          link: { type: "doc", id: "devsecops/git/index" },
           items: [
             "devsecops/git/pre-commit",
             {
@@ -99,10 +85,8 @@ const sidebars = {
       type: "category",
       label: "📜 Cheat Sheets",
       link: {
-        type: "generated-index",
-        description: "Quick reference for CLI commands.",
-        keywords: ["cheat", "sheet", "cheatsheet"],
-        slug: "cheats",
+        type: "doc",
+        id: "cheats",
       },
       items: [
         {

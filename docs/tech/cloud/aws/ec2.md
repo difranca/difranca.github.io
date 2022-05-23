@@ -1,5 +1,7 @@
 ---
-keywords: ["aws", "amazon", "ec2", "compute"]
+keywords: [aws, amazon, ec2, compute]
+title: EC2 (Elastic Compute Cloud) | Cloud | AWS | Tech-Notes
+sidebar_label: EC2 (Elastic Compute Cloud)
 ---
 
 # EC2 (Elastic Compute Cloud)

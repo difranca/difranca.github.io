@@ -1,16 +1,17 @@
 ---
-title: Introduction
+title: Tech-Notes
+sidebar_label: Introduction
 keywords:
   [
-    "learning",
-    "notes",
-    "tech",
-    "cloud",
-    "engineering",
-    "architecture",
-    "devops",
-    "coding",
-    "programming",
+    learning,
+    notes,
+    tech,
+    cloud,
+    engineering,
+    architecture,
+    devops,
+    coding,
+    programming,
   ]
 slug: /
 ---
