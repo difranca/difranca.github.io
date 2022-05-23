@@ -1,23 +1,25 @@
 ---
-keywords: ["git", "scm", "devops", "gitops"]
-slug: "/devsecops/git"
+keywords: [cloud, computing, iac, infrastructure]
+slug: /cloud/aws
+title: AWS | Cloud | Tech-Notes
+sidebar_label: AWS
 ---
 
-# Git
+# AWS
 
 <br/>
 
 <div style={{textAlign: 'center'}}>
 
-<img width="200" height="200" alt="logo" src="/img/devsecops/git.png"/>
+<img width="200" height="200" alt="logo" src="/img/cloud/aws.png"/>
 
-_Git is a free and open source distributed version control system._
+_Amazon Web Services provides on-demand cloud computing services._
 
 </div>
 
 :::note More Information
 
-- https://git-scm.com
+- https://aws.amazon.com
 
 :::
 

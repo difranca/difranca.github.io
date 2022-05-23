@@ -1,5 +1,7 @@
 ---
-keywords: ["terraform", "iac", "backend", "state"]
+keywords: [terraform, iac, backend, state]
+title: Backends | Terraform | Cloud | Tech-Notes
+sidebar_label: Backends
 ---
 
 # Backends

@@ -1,6 +1,8 @@
 ---
-keywords: ["terraform", "iac"]
-slug: "/cloud/terraform"
+keywords: [terraform, iac]
+slug: /cloud/terraform
+title: Terraform | Cloud | Tech-Notes
+sidebar_label: Terraform
 ---
 
 # Terraform
