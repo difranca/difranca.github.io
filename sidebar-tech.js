@@ -83,7 +83,25 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "📜 Cheat Sheets",
+      label: "👨‍💻 Programming Languages",
+      collapsed: false,
+      collapsible: false,
+      link: {
+        type: "doc",
+        id: "languages/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "JavaScript",
+          link: { type: "doc", id: "languages/javascript/index" },
+          items: ["languages/javascript/throttle-debounce"],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "🧾 Cheat Sheets",
       link: {
         type: "doc",
         id: "cheats",
