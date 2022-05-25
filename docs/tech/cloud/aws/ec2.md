@@ -170,7 +170,7 @@ Placement groups influence the placement of a group of interdependent instances 
 - Launching instances over time increases the chances of getting an insufficient capacity error
 
 <div style={{display: 'inline-block', textAlign: 'center'}}>
-<img src="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-cluster.png" style={{display: 'block'}}/>
+<img src="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-cluster.png" alt="Clustered" style={{display: 'block'}}/>
 <sup>
 
 [Source](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
@@ -189,7 +189,7 @@ Recommended for:
 - It can have partitions in multiple Availability Zones in the same Region
 
 <div style={{display: 'inline-block', textAlign: 'center'}}>
-<img src="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-partition.png" style={{display: 'block'}}/>
+<img src="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-partition.png" alt="Partition" style={{display: 'block'}}/>
 <sup>
 
 [Source](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
@@ -208,7 +208,7 @@ Recommended for:
 - Can span multiple Availability Zones in the same Region
 
 <div style={{display: 'inline-block', textAlign: 'center'}}>
-<img src="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-spread.png" style={{display: 'block'}}/>
+<img src="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/placement-group-spread.png" alt="Spread" style={{display: 'block'}}/>
 <sup>
 
 [Source](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)

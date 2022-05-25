@@ -1,14 +1,15 @@
 ---
 keywords:
   [throttle, debounce, javascript, event, programming, language, code, coding]
-title: Throttle and Debounce | JavaScript | Programming Languages | Tech-Notes
+title: Throttle and Debounce | JavaScript | Languages | Tech-Notes
 sidebar_label: Throttle and Debounce
+description: In an event-driven development, some events happen more often than we would like to handle. But it is possible to control the execution of handler functions.
 ---
 
 # Throttle and Debounce
 
 In an event-driven development, some events happen more often than we would like to handle. Taking events in a browser as an example, this can occur while a user scrolls the window or repeatedly clicks the same button.
-Fortunately, it is possible to control the execution of the handling functions using some strategies such as throttle and debounce.
+Fortunately, it is possible to control the execution of handler functions using some strategies such as throttle and debounce.
 
 <br/>
 
