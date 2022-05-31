@@ -37,7 +37,7 @@ const sidebars = {
             type: "doc",
             id: "cloud/aws/index",
           },
-          items: ["cloud/aws/ec2"],
+          items: ["cloud/aws/ec2", "cloud/aws/s3"],
         },
         {
           type: "category",
