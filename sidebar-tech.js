@@ -83,6 +83,27 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "📐 Architecture",
+      collapsed: false,
+      collapsible: false,
+      link: {
+        type: "doc",
+        id: "architecture/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "Software",
+          link: {
+            type: "doc",
+            id: "architecture/software/index",
+          },
+          items: ["architecture/software/code-reuse"],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "👨‍💻 Programming Languages",
       collapsed: false,
       collapsible: false,
