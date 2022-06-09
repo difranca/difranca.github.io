@@ -1,7 +1,7 @@
 ---
 keywords:
   [software, architecture, code, reuse, shared, library, service, sidecar, mesh]
-title: Code Reuse | Software Architecture | Tech-Notes
+title: Code Reuse | Software | Architecture | Tech-Notes
 description: There are several ways in which common components can be shared, especially in distributed architectures.
 sidebar_label: Code Reuse
 ---
