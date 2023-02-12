@@ -22,11 +22,19 @@ Fortunately, it is possible to control the execution of handler functions using 
 ### Implementation Example
 
 ```js
+/**
+Returns a throttled version of the provided callback.
+The returned function will call the callback only once within the specified timeout.
+Subsequent calls made within the timeout will be ignored.
+@param {Function} callback - The callback function to throttle.
+@param {Number} [timeout=500] - The timeout in milliseconds.
+@returns {Function} - The throttled version of the provided callback.
+*/
 function throttle(callback, timeout = 500) {
-  var waiting = false;
+  let waiting = false;
   return (...args) => {
     if (!waiting) {
-      callback.apply(this, args);
+      callback(...args);
       waiting = true;
       setTimeout(() => {
         waiting = false;
@@ -54,12 +62,20 @@ const throttledFunction = throttle((arg1, arg2) => myFunction(arg1, arg2), 300);
 ### Implementation Example
 
 ```js
+/**
+Returns a debounced version of the provided callback.
+The returned function will call the callback only if it hasn't been called again within the specified timeout.
+If a subsequent call is made within the timeout, the timer is reset and the callback is called again only after the timeout.
+@param {Function} callback - The callback function to debounce.
+@param {Number} [timeout=500] - The timeout in milliseconds.
+@returns {Function} - The debounced version of the provided callback.
+*/
 function debounce(callback, timeout = 500) {
   let timer;
   return (...args) => {
     clearTimeout(timer);
     timer = setTimeout(() => {
-      callback.apply(this, args);
+      callback(...args);
     }, timeout);
   };
 }
