@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 Cheat sheet for kubectl commands.
 
 :::info
-This page was automatically generated from a navi cheat file available at [**difranca/navi-cheats**](https://github.com/difranca/navi-cheats).<br />
+This page was automatically generated from a navi cheat file available at [**difranca/navi-cheats**](https://github.com/difranca/navi-cheats).<br/>
 **Navi** is an interactive cheatsheet tool for the command-line. To learn more about it, visit [**denisidoro/navi**](https://github.com/denisidoro/navi).
 :::
 
