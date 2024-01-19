@@ -5,7 +5,7 @@ slug: /cheats
 keywords: [cheat, sheet, cheatsheet]
 ---
 
-# DevSecOps
+# Cheat Sheets
 
 Practices that combines software development, security and operations.
 

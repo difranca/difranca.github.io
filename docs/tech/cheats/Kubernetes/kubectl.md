@@ -31,7 +31,7 @@ Set which Kubectl cluster kubectl communicates with and modify configuration inf
 |**kubectl config view**|Show Merged kubeconfig settings|
 |**kubectl config get-contexts**|Display list of contexts|
 |**kubectl config current-context**|Display the current-context|
-|**kubectl config use-context {context-name}**|Set the default context to my-cluster-name|
+|**kubectl config use-context \{context-name\}**|Set the default context to my-cluster-name|
 
 <br/>
 
@@ -41,8 +41,8 @@ Manage applications through files.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl create -f {filename}**|Create resource(s) from file|
-|**kubectl apply -f {filename}**|Create or modify resource(s) from file|
+|**kubectl create -f \{filename\}**|Create resource(s) from file|
+|**kubectl apply -f \{filename\}**|Create or modify resource(s) from file|
 
 <br/>
 
@@ -52,8 +52,8 @@ List resources from cluster.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl get {resource} -n {namespace}**|List namespace-scoped resources|
-|**kubectl get {resource}**|List cluster-scoped resources|
+|**kubectl get \{resource\} -n \{namespace\}**|List namespace-scoped resources|
+|**kubectl get \{resource\}**|List cluster-scoped resources|
 
 <br/>
 
@@ -63,11 +63,10 @@ Interacting with nodes and cluster.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl cordon {node_name}**|Mark node as unschedulable|
-|**kubectl uncordon {node_name}**|Mark my-node as schedulable|
-|**kubectl drain {node_name}**|Drain node in preparation for maintenance|
+|**kubectl cordon \{node_name\}**|Mark node as unschedulable|
+|**kubectl uncordon \{node_name\}**|Mark my-node as schedulable|
+|**kubectl drain \{node_name\}**|Drain node in preparation for maintenance|
 |**kubectl cluster-info**|Display cluster information|
-
 
 </TabItem>
 <TabItem value="Navi Cheat">

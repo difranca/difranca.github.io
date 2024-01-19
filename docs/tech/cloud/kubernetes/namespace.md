@@ -38,12 +38,12 @@ my-namespace       Terminating   7m
 1. Get the namespace manifest
 
 ```bash
-$ kubectl get ns my-namespace -o yaml > namespace.yaml 
+kubectl get ns my-namespace -o yaml > namespace.yaml 
 ```
 
 2. Edit the manifest file and remove all finalizers 
 
-```yaml
+```yaml title="namespace.yaml"
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -65,7 +65,7 @@ Starting to serve on 127.0.0.1:8001
 4. Call namespace finalize API:
 
 ```bash
-$ curl -H "Content-Type: application/yaml" -X PUT --data-binary @namespace.yaml http://127.0.0.1:8001/api/v1/namespaces/my-namespace/finalize 
+curl -H "Content-Type: application/yaml" -X PUT --data-binary @namespace.yaml http://127.0.0.1:8001/api/v1/namespaces/my-namespace/finalize 
 ```
 
 5. Confirm if namespace was deleted
@@ -77,4 +77,4 @@ NAME               STATUS        AGE
 default            Active        2d
 kube-public        Active        2d
 kube-system        Active        2d
-``
+```
