@@ -41,6 +41,21 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "Kubernetes",
+          link: {
+            type: "doc",
+            id: "cloud/kubernetes/index",
+          },
+          items: [
+            "cloud/kubernetes/namespace",
+            {
+              type: "link",
+              label: "Cheats",
+              href: "/tech-notes/cheats/kubernetes/kubectl",
+            },],
+        },
+        {
+          type: "category",
           label: "Terraform",
           link: {
             type: "doc",

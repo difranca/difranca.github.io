@@ -1,9 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const remarkSubSuper = require("remark-sub-super");
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -39,7 +36,6 @@ const config = {
           path: "docs/tech",
           routeBasePath: "tech-notes",
           sidebarPath: require.resolve("./sidebar-tech.js"),
-          remarkPlugins: [remarkSubSuper],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/difranca/difranca.github.io/blob/main",
@@ -55,7 +51,6 @@ const config = {
   ],
 
   plugins: [
-    "@cmfcmf/docusaurus-search-local",
     [
       "@docusaurus/plugin-client-redirects",
       {
@@ -64,6 +59,25 @@ const config = {
             return [path.replace("/learning-notes", "/tech-notes")];
           }
         },
+      },
+    ],
+  ],
+
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: "/",
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        language: ["en"],
+        // ```
       },
     ],
   ],
@@ -153,9 +167,9 @@ const config = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ["hcl"],
+        theme: prismThemes.github,
+        darkTheme: prismThemes.oceanicNext,
+        additionalLanguages: ["bash", "hcl", "yaml"],
       },
     }),
 };

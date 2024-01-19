@@ -39,8 +39,16 @@ Feel free to open an [issue](https://github.com/difranca/difranca.github.io/issu
 This is highly inspired by the following projects:
 
 - [learning-notes.mistermicheels.com](https://learning-notes.mistermicheels.com)
-- [cheatsheet.dennyzhang.com](https://cheatsheet.dennyzhang.com)
 - [github.com/keyvanakbary/learning-notes](https://github.com/keyvanakbary/learning-notes)
+
+## Running Locally
+
+To preview changes as soon as a file is edited, you can run a local development server:
+
+```bash
+yarn install
+yarn start
+```
 
 ## License Summary
 

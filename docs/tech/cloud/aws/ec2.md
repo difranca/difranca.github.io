@@ -47,7 +47,7 @@ Recommended for:
 
 - Allows you to bid for spare EC2 computing capacity
 - Up to 90% off the On-Demand price
-- The average frequency of interruption across all Regions and instance types is <5%
+- The average frequency of interruption across all Regions and instance types is < 5%
 - The billing for interrupted spot instances is different depending on [whether it was you or Amazon](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-for-interrupted-spot-instances.html) that stopped/terminated the instance
 - Estimated savings over on-demand and frequency of interruption can be found [Spot Instance advisor](https://aws.amazon.com/ec2/spot/instance-advisor/?nc1=h_ls)
 
