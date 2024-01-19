@@ -7,7 +7,7 @@ keywords: [cheat, sheet, cheatsheet]
 
 # Cheat Sheets
 
-Practices that combines software development, security and operations.
+Reference guides for command-line interfaces.
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
