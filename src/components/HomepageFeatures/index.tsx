@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "GitHub Project",
-    img: "https://github-readme-stats.vercel.app/api/pin/?username=difranca&repo=difranca.github.io",
+    img: "https://opengraph.githubassets.com/1/difranca/difranca.github.io",
     link: "https://github.com/difranca/difranca.github.io",
     description: (
       <>
@@ -49,7 +49,7 @@ function Feature({ title, link, img: img, description }: FeatureItem) {
     <div className={clsx("col col--6")}>
       <a className="text--center" href={link}>
         <div className="feature-logo">
-          <img src={img} alt={title} height="100px" width="333px"></img>
+          <img src={img} alt={title} style={{width: "333px", height: "174px", objectFit: "contain"}}></img>
         </div>
       </a>
       <div className="text--center padding-horiz--md">
