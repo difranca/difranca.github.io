@@ -74,8 +74,8 @@ For more information on how to configure the `.pre-commit-config`, visit [this p
 It is necessary to set in which directory the git template will be written:
 
 ```bash
-git config --global init.templateDir <teplate-dir>
-pre-commit init-templatedir <teplate-dir> -c <pre-commit-config-path>
+git config --global init.templateDir <template-dir>
+pre-commit init-templatedir <template-dir> -c <pre-commit-config-path>
 ```
 
 Using the user's home as an example:

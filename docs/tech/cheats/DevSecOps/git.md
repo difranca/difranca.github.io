@@ -130,7 +130,7 @@ Temporarily store modified files
 
 | Command | Description |
 | ------- | ----------- |
-|**git stash**|Save modifications for later use and rollback to last the last commit|
+|**git stash**|Save modifications for later use and rollback to the last commit|
 |**git stash list**|List saved stashes|
 |**git stash pop**|Apply stashed changes into the current branch (discard saved stash)|
 |**git stash apply**|Apply stashed changes into the current branch (keep saved stash)|
@@ -318,7 +318,7 @@ git reset --soft <commit_sha>
 % Git > Temporary
 ;; Temporarily store modified files
 
-# Save modifications for later use and rollback to last the last commit
+# Save modifications for later use and rollback to the last commit
 git stash
 
 # List saved stashes

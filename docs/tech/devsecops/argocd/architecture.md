@@ -27,7 +27,7 @@ Responsibilities:
 
 It runs Argo CD Application Controller, which is a Kubernetes controller, that continuously monitors running applications and compares the current state against the desired target state.
 
-Responsabilities:
+Responsibilities:
 
 - _OutOfSync_ application state detection
 - Optionally takes corrective actions against _OutOfSync_ states
@@ -37,7 +37,7 @@ Responsabilities:
 
 It runs Argo CD Repository Server, which maintains a local cache of the Git repository holding the application manifests.
 
-Responsabilities:
+Responsibilities:
 
 - Generating and returning the Kubernetes manifests based on:
   - Repository URL
@@ -49,18 +49,18 @@ Responsabilities:
 
 It runs Argo CD Dex, which is an identity service that uses OpenID Connect to drive authentication for Argo CD.
 
-Responsabilities:
+Responsibilities:
 
 - Deferring authentication to:
-- LDAP servers
-- SAML providers
-- Other identity providers, such as GitHub, Google, and Active Directory
+  - LDAP servers
+  - SAML providers
+  - Other identity providers, such as GitHub, Google, and Active Directory
 
 ### argocd-redis
 
 It runs Redis, which is an open source in-memory data structure store, used as a database.
 
-Responsabilities:
+Responsibilities:
 
 - Cache
 
@@ -76,7 +76,7 @@ Responsabilities:
 
 ### Application
 
-Application is a custom Resource Definition (CRD) which represents a deployed application instance in an environment.
+Application is a Custom Resource Definition (CRD) which represents a deployed application instance in an environment.
 It is defined by two key pieces of information:
 
 - **Source**: reference to the desired state in Git (repository, revision, path, environment)

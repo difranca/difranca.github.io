@@ -158,7 +158,7 @@ After confirming the copy, the new state backend will be created:
 <br/>
 
 Now you can use `terraform plan` and `terraform apply` again.
-After applying the new configuration, the new state backend will be update:
+After applying the new configuration, the new state backend will be updated:
 
 ```json title="state02.tfstate"
 {
@@ -178,7 +178,7 @@ After applying the new configuration, the new state backend will be update:
 
 :::info
 Note that after the `migrate-state` command, the previous state was only copied, not moved.
-Therefore, the old state backend still exists with the old content, and you can be manually delete it if desired.
+Therefore, the old state backend still exists with the old content, and you can manually delete it if desired.
 :::
 
 <br/>

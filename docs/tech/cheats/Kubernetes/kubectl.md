@@ -24,7 +24,7 @@ This page was automatically generated from a navi cheat file available at [**dif
 
 ## Config
 
-Set which Kubectl cluster kubectl communicates with and modify configuration information.
+Set which cluster kubectl communicates with and modify configuration information.
 
 | Command | Description |
 | ------- | ----------- |
@@ -78,7 +78,7 @@ Interacting with nodes and cluster.
 
 % Kubectl > Config
 @ Kubectl
-;; Set which Kubectl cluster kubectl communicates with and modify configuration information.
+;; Set which cluster kubectl communicates with and modify configuration information.
 
 # Show Merged kubeconfig settings
 kubectl config view
