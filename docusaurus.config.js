@@ -43,9 +43,11 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-        gtag: {
-          trackingID: "G-6WT9XWQMQ5",
-        },
+        ...(process.env.NODE_ENV === "production" && {
+          gtag: {
+            trackingID: "G-6WT9XWQMQ5",
+          },
+        }),
       }),
     ],
   ],
