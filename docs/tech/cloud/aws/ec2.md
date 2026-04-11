@@ -39,7 +39,7 @@ Recommended for:
 
 :::note More Information
 
-- https://aws.amazon.com/ec2/princing/on-demand
+- https://aws.amazon.com/ec2/pricing/on-demand
 
 :::
 
@@ -49,7 +49,7 @@ Recommended for:
 - Up to 90% off the On-Demand price
 - The average frequency of interruption across all Regions and instance types is < 5%
 - The billing for interrupted spot instances is different depending on [whether it was you or Amazon](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-for-interrupted-spot-instances.html) that stopped/terminated the instance
-- Estimated savings over on-demand and frequency of interruption can be found [Spot Instance advisor](https://aws.amazon.com/ec2/spot/instance-advisor/?nc1=h_ls)
+- Estimated savings over on-demand and frequency of interruption can be found at the [Spot Instance advisor](https://aws.amazon.com/ec2/spot/instance-advisor/?nc1=h_ls)
 
 Recommended for:
 
@@ -66,7 +66,7 @@ Recommended for:
 ### Instance Savings Plans
 
 - Usage commitment (measured in $/hour) for a one or three-year period
-- All upfront, partial upfront or no upfront payment options ([changes the final price](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/))
+- All upfront, partial upfront or no upfront payment options ([changes the final price](https://aws.amazon.com/savingsplans/pricing/))
 - Up to 72% off the On-Demand price
 
 Recommended for:
@@ -82,7 +82,7 @@ Recommended for:
 ### Dedicated Hosts
 
 - Dedicated physical EC2 server
-- Can be purchased on-demand (hourly) or as a a reservation (up to 70% off)
+- Can be purchased on-demand (hourly) or as a reservation (up to 70% off)
 - Allows you to use your existing server-bound licenses
 - Useful for regulatory requirements that may not support multi-tenant virtualization
 

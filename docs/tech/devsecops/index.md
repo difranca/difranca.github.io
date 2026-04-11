@@ -7,7 +7,7 @@ keywords: [devsecops, devops, ci/cd, cicd, development, security, operations]
 
 # DevSecOps
 
-Practices that combines software development, security and operations.
+Practices that combine software development, security and operations.
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';

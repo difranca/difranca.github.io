@@ -6,7 +6,7 @@ sidebar_label: Namespaces
 
 # Namespaces
 
-Namespaces provides a mechanism for isolating groups of resources within a single cluster.
+Namespaces provide a mechanism for isolating groups of resources within a single cluster.
 
 - Names of resources need to be unique within a namespace
 - Namespace-based scoping is applicable only for namespaced objects and not for cluster-wide objects
