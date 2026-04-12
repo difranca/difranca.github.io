@@ -28,3 +28,10 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Make homepage main content fill available space */
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
