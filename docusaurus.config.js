@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "difranca",
-  tagline: "Dinosaurs are cool",
+  tagline: "Solutions Architect & Staff Software Engineer",
   url: "https://difranca.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",

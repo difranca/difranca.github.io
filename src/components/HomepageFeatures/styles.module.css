@@ -3,9 +3,96 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  flex: 1;
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+/* Responsive feature images */
+.featureImg {
+  width: 333px;
+  height: 174px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Hover effect on feature cards */
+.featureCard {
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 0.5rem;
+}
+
+.featureCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='dark'] .featureCard:hover {
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Pulse/glow animation on the tech-notes card */
+.pulse {
+  animation: pulseGlow 2s ease-in-out infinite;
+  border-radius: 12px;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(46, 133, 85, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(46, 133, 85, 0.8), 0 0 48px rgba(46, 133, 85, 0.3);
+  }
+}
+
+[data-theme='dark'] .pulse {
+  animation: pulseGlowDark 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlowDark {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(37, 194, 160, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(37, 194, 160, 0.8), 0 0 48px rgba(37, 194, 160, 0.3);
+  }
+}
+
+/* Tooltip banner */
+.tooltip {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.tooltipVisible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.tooltipContent {
+  display: inline-block;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tooltipContent:hover {
+  background: var(--ifm-color-primary-dark);
+  color: #fff;
+  text-decoration: none;
 }

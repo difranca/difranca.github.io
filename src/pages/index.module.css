@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 2rem 0 1.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 }
 
@@ -20,4 +20,66 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.fadeDelay1 { animation-delay: 0s; }
+.fadeDelay2 { animation-delay: 0.3s; }
+.fadeDelay3 { animation-delay: 0.6s; }
+.fadeDelay4 { animation-delay: 0.9s; }
+.fadeDelay5 { animation-delay: 1.2s; }
+.fadeDelay6 { animation-delay: 1.5s; }
+.fadeDelay7 { animation-delay: 1.8s; }
+
+/* Roles list */
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .roles {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+/* Social links */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.socialLink {
+  color: inherit;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.socialLink:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  color: inherit;
 }
