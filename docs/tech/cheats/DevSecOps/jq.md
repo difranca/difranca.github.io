@@ -29,10 +29,10 @@ Select and extract data from JSON.
 | Command | Description |
 | ------- | ----------- |
 |**| jq '.'**|Pretty-print JSON|
-|**| jq '.{field}'**|Get a top-level field|
-|**| jq '.{field}.{nested_field}'**|Get a nested field|
+|**| jq '.\{field\}'**|Get a top-level field|
+|**| jq '.\{field\}.\{nested_field\}'**|Get a nested field|
 |**| jq '.[0]'**|Get the first element of an array|
-|**| jq '.[].{field}'**|Get a field from each element in an array|
+|**| jq '.[].\{field\}'**|Get a field from each element in an array|
 |**| jq '. | length'**|Get array length|
 
 <br/>
@@ -43,11 +43,11 @@ Filter and search JSON data.
 
 | Command | Description |
 | ------- | ----------- |
-|**| jq '.[] | select(.{field} == "{value}")'**|Filter array elements by condition|
-|**| jq '.[] | select(.{field} | contains("{value}"))'**|Filter elements where field contains a string|
-|**| jq '.[] | select(.{field} != null)'**|Filter elements where field is not null|
-|**| jq '[.[].{field}] | unique'**|Get unique values of a field|
-|**| jq 'sort_by(.{field})'**|Sort array by a field|
+|**| jq '.[] | select(.\{field\} == "\{value\}")'**|Filter array elements by condition|
+|**| jq '.[] | select(.\{field\} | contains("\{value\}"))'**|Filter elements where field contains a string|
+|**| jq '.[] | select(.\{field\} != null)'**|Filter elements where field is not null|
+|**| jq '[.[].\{field\}] | unique'**|Get unique values of a field|
+|**| jq 'sort_by(.\{field\})'**|Sort array by a field|
 
 <br/>
 
@@ -57,13 +57,13 @@ Reshape and transform JSON.
 
 | Command | Description |
 | ------- | ----------- |
-|**| jq '.[] | {{new_key}: .{field}}'**|Create a new object from fields|
-|**| jq '[.[] | .{field}]'**|Map array elements|
+|**| jq '.[] | \{\{new_key\}: .\{field\}\}'**|Create a new object from fields|
+|**| jq '[.[] | .\{field\}]'**|Map array elements|
 |**| jq 'flatten'**|Flatten nested arrays|
-|**| jq 'group_by(.{field})'**|Group by a field|
+|**| jq 'group_by(.\{field\})'**|Group by a field|
 |**| jq '.[] | join(",")'**|Join array elements as string|
-|**| jq -r '.[] | [.{field1}, .{field2}] | @csv'**|Convert to CSV-like output|
-|**| jq '.[] + {"{new_key}": "{value}"}'**|Add a new field to each element|
+|**| jq -r '.[] | [.\{field1\}, .\{field2\}] | @csv'**|Convert to CSV-like output|
+|**| jq '.[] + \{"\{new_key\}": "\{value\}"\}'**|Add a new field to each element|
 
 <br/>
 
@@ -73,10 +73,10 @@ Control output format.
 
 | Command | Description |
 | ------- | ----------- |
-|**| jq -r '.{field}'**|Output raw strings without quotes|
+|**| jq -r '.\{field\}'**|Output raw strings without quotes|
 |**| jq -c '.'**|Compact output (no pretty-print)|
-|**| jq -r '.[] | [.{field1}, .{field2}] | @tsv'**|Output as tab-separated values|
-|**| jq '[.[] | select(.{field} == "{value}")] | length'**|Count elements matching a condition|
+|**| jq -r '.[] | [.\{field1\}, .\{field2\}] | @tsv'**|Output as tab-separated values|
+|**| jq '[.[] | select(.\{field\} == "\{value\}")] | length'**|Count elements matching a condition|
 
 
 </TabItem>

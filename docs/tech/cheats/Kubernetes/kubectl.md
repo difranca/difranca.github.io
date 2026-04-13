@@ -31,7 +31,7 @@ Set which Kubectl cluster kubectl communicates with and modify configuration inf
 |**kubectl config view**|Show Merged kubeconfig settings|
 |**kubectl config get-contexts**|Display list of contexts|
 |**kubectl config current-context**|Display the current-context|
-|**kubectl config use-context {context_name}**|Set the default context to my-cluster-name|
+|**kubectl config use-context \{context_name\}**|Set the default context to my-cluster-name|
 
 <br/>
 
@@ -41,8 +41,8 @@ Manage applications through files.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl create -f {filename}**|Create resource(s) from file|
-|**kubectl apply -f {filename}**|Create or modify resource(s) from file|
+|**kubectl create -f \{filename\}**|Create resource(s) from file|
+|**kubectl apply -f \{filename\}**|Create or modify resource(s) from file|
 
 <br/>
 
@@ -52,9 +52,9 @@ List resources from cluster.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl get {resource} -n {namespace}**|List namespace-scoped resources|
-|**kubectl get {resource} -n {namespace} -o wide**|List namespace-scoped resources with extra details|
-|**kubectl get {resource}**|List cluster-scoped resources|
+|**kubectl get \{resource\} -n \{namespace\}**|List namespace-scoped resources|
+|**kubectl get \{resource\} -n \{namespace\} -o wide**|List namespace-scoped resources with extra details|
+|**kubectl get \{resource\}**|List cluster-scoped resources|
 
 <br/>
 
@@ -64,10 +64,10 @@ View detailed information about resources.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl describe {resource} -n {namespace}**|Describe a resource in a namespace|
-|**kubectl get {resource} -n {namespace} -o yaml**|Get a resource as YAML|
-|**kubectl get pod {pod} -n {namespace} -o yaml**|Get a specific pod as YAML|
-|**kubectl get events -n {namespace} --sort-by='.lastTimestamp'**|Get events sorted by last timestamp|
+|**kubectl describe \{resource\} -n \{namespace\}**|Describe a resource in a namespace|
+|**kubectl get \{resource\} -n \{namespace\} -o yaml**|Get a resource as YAML|
+|**kubectl get pod \{pod\} -n \{namespace\} -o yaml**|Get a specific pod as YAML|
+|**kubectl get events -n \{namespace\} --sort-by='.lastTimestamp'**|Get events sorted by last timestamp|
 
 <br/>
 
@@ -77,10 +77,10 @@ View container logs.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl logs {pod} -n {namespace}**|Show logs for a pod|
-|**kubectl logs -f {pod} -n {namespace}**|Follow (stream) logs for a pod|
-|**kubectl logs --previous {pod} -n {namespace}**|Show logs for a pod from the previous container instance|
-|**kubectl logs --tail={number_of_lines} {pod} -n {namespace}**|Show logs for the last N lines|
+|**kubectl logs \{pod\} -n \{namespace\}**|Show logs for a pod|
+|**kubectl logs -f \{pod\} -n \{namespace\}**|Follow (stream) logs for a pod|
+|**kubectl logs --previous \{pod\} -n \{namespace\}**|Show logs for a pod from the previous container instance|
+|**kubectl logs --tail=\{number_of_lines\} \{pod\} -n \{namespace\}**|Show logs for the last N lines|
 
 <br/>
 
@@ -90,8 +90,8 @@ Execute commands inside containers.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl exec -it {pod} -n {namespace} -- /bin/sh**|Open a shell in a pod|
-|**kubectl exec {pod} -n {namespace} -- {command}**|Run a command in a pod|
+|**kubectl exec -it \{pod\} -n \{namespace\} -- /bin/sh**|Open a shell in a pod|
+|**kubectl exec \{pod\} -n \{namespace\} -- \{command\}**|Run a command in a pod|
 
 <br/>
 
@@ -101,9 +101,9 @@ Delete resources from cluster.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl delete -f {filename}**|Delete resource(s) from file|
-|**kubectl delete pod {pod} -n {namespace}**|Delete a pod|
-|**kubectl delete {resource} {name} -n {namespace}**|Delete a resource by name|
+|**kubectl delete -f \{filename\}**|Delete resource(s) from file|
+|**kubectl delete pod \{pod\} -n \{namespace\}**|Delete a pod|
+|**kubectl delete \{resource\} \{name\} -n \{namespace\}**|Delete a resource by name|
 
 <br/>
 
@@ -113,7 +113,7 @@ Scale resource replicas.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl scale deployment {deployment} -n {namespace} --replicas={number_of_replicas}**|Scale a deployment to a number of replicas|
+|**kubectl scale deployment \{deployment\} -n \{namespace\} --replicas=\{number_of_replicas\}**|Scale a deployment to a number of replicas|
 
 <br/>
 
@@ -123,8 +123,8 @@ Forward local ports to pods or services.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl port-forward {pod} {local_port}:{remote_port} -n {namespace}**|Forward a local port to a pod port|
-|**kubectl port-forward svc/{service} {local_port}:{remote_port} -n {namespace}**|Forward a local port to a service port|
+|**kubectl port-forward \{pod\} \{local_port\}:\{remote_port\} -n \{namespace\}**|Forward a local port to a pod port|
+|**kubectl port-forward svc/\{service\} \{local_port\}:\{remote_port\} -n \{namespace\}**|Forward a local port to a service port|
 
 <br/>
 
@@ -134,9 +134,9 @@ Interacting with nodes and cluster.
 
 | Command | Description |
 | ------- | ----------- |
-|**kubectl cordon {node_name}**|Mark node as unschedulable|
-|**kubectl uncordon {node_name}**|Mark my-node as schedulable|
-|**kubectl drain {node_name}**|Drain node in preparation for maintenance|
+|**kubectl cordon \{node_name\}**|Mark node as unschedulable|
+|**kubectl uncordon \{node_name\}**|Mark my-node as schedulable|
+|**kubectl drain \{node_name\}**|Drain node in preparation for maintenance|
 |**kubectl cluster-info**|Display cluster information|
 
 

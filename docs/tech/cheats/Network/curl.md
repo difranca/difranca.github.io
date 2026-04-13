@@ -28,14 +28,14 @@ Perform GET requests.
 
 | Command | Description |
 | ------- | ----------- |
-|**curl {url}**|Simple GET request|
-|**curl -v {url}**|GET request with verbose output|
-|**curl -H '{header_name}: {header_value}' {url}**|GET with custom header|
-|**curl -H 'Authorization: Bearer {token}' {url}**|GET with Bearer token authentication|
-|**curl -u {username}:{password} {url}**|GET with basic authentication|
-|**curl -L {url}**|GET and follow redirects|
-|**curl -I {url}**|GET response headers only|
-|**curl -G -d '{param}={value}' {url}**|GET with query parameters|
+|**curl \{url\}**|Simple GET request|
+|**curl -v \{url\}**|GET request with verbose output|
+|**curl -H '\{header_name\}: \{header_value\}' \{url\}**|GET with custom header|
+|**curl -H 'Authorization: Bearer \{token\}' \{url\}**|GET with Bearer token authentication|
+|**curl -u \{username\}:\{password\} \{url\}**|GET with basic authentication|
+|**curl -L \{url\}**|GET and follow redirects|
+|**curl -I \{url\}**|GET response headers only|
+|**curl -G -d '\{param\}=\{value\}' \{url\}**|GET with query parameters|
 
 <br/>
 
@@ -45,10 +45,10 @@ Perform POST requests.
 
 | Command | Description |
 | ------- | ----------- |
-|**curl -X POST -H 'Content-Type: application/json' -d '{json_body}' {url}**|POST with JSON body|
-|**curl -X POST -H 'Content-Type: application/json' -d @{file} {url}**|POST with JSON file|
-|**curl -X POST -d '{param}={value}' {url}**|POST with form data|
-|**curl -X POST -F 'file=@{file}' {url}**|POST with file upload (multipart)|
+|**curl -X POST -H 'Content-Type: application/json' -d '\{json_body\}' \{url\}**|POST with JSON body|
+|**curl -X POST -H 'Content-Type: application/json' -d @\{file\} \{url\}**|POST with JSON file|
+|**curl -X POST -d '\{param\}=\{value\}' \{url\}**|POST with form data|
+|**curl -X POST -F 'file=@\{file\}' \{url\}**|POST with file upload (multipart)|
 
 <br/>
 
@@ -58,9 +58,9 @@ Perform PUT, PATCH, and DELETE requests.
 
 | Command | Description |
 | ------- | ----------- |
-|**curl -X PUT -H 'Content-Type: application/json' -d '{json_body}' {url}**|PUT with JSON body|
-|**curl -X PATCH -H 'Content-Type: application/json' -d '{json_body}' {url}**|PATCH with JSON body|
-|**curl -X DELETE {url}**|DELETE request|
+|**curl -X PUT -H 'Content-Type: application/json' -d '\{json_body\}' \{url\}**|PUT with JSON body|
+|**curl -X PATCH -H 'Content-Type: application/json' -d '\{json_body\}' \{url\}**|PATCH with JSON body|
+|**curl -X DELETE \{url\}**|DELETE request|
 
 <br/>
 
@@ -70,10 +70,10 @@ Download files and content.
 
 | Command | Description |
 | ------- | ----------- |
-|**curl -O {url}**|Download a file preserving the remote name|
-|**curl -o {output_file} {url}**|Download a file with a custom name|
-|**curl -C - -O {url}**|Resume an interrupted download|
-|**curl -sS -O {url}**|Download silently (no progress bar)|
+|**curl -O \{url\}**|Download a file preserving the remote name|
+|**curl -o \{output_file\} \{url\}**|Download a file with a custom name|
+|**curl -C - -O \{url\}**|Resume an interrupted download|
+|**curl -sS -O \{url\}**|Download silently (no progress bar)|
 
 <br/>
 
@@ -83,11 +83,11 @@ Troubleshoot requests and connections.
 
 | Command | Description |
 | ------- | ----------- |
-|**curl -o /dev/null -s -w 'DNS: %{time_namelookup}s\nConnect: %{time_connect}s\nTLS: %{time_appconnect}s\nTotal: %{time_total}s\n' {url}**|Show response time breakdown|
-|**curl -i {url}**|Show response with headers|
-|**curl --http2 {url}**|Use a specific HTTP version|
-|**curl --connect-timeout {seconds} {url}**|Set a connection timeout (seconds)|
-|**curl -k {url}**|Ignore SSL certificate errors|
+|**curl -o /dev/null -s -w 'DNS: %\{time_namelookup\}s\nConnect: %\{time_connect\}s\nTLS: %\{time_appconnect\}s\nTotal: %\{time_total\}s\n' \{url\}**|Show response time breakdown|
+|**curl -i \{url\}**|Show response with headers|
+|**curl --http2 \{url\}**|Use a specific HTTP version|
+|**curl --connect-timeout \{seconds\} \{url\}**|Set a connection timeout (seconds)|
+|**curl -k \{url\}**|Ignore SSL certificate errors|
 
 
 </TabItem>
