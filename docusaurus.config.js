@@ -39,9 +39,15 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/difranca/difranca.github.io/blob/main",
+          showLastUpdateTime: false,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+        },
+        sitemap: {
+          lastmod: 'datetime',
+          changefreq: 'weekly',
+          priority: 0.5,
         },
         ...(process.env.NODE_ENV === "production" && {
           gtag: {
